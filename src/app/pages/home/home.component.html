@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="banner">
+            <div class="col-lg-6 ">
+                <h1 class="mb-5">Fresh Cooked Food <br>At Your Door</h1>
+                <a routerLink="/menu">Order Now<i style="font-size: 25px" class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- use step -->
+<div class="container mt-5 mb-5">
+    <div class="step">
+        <h1 class="text-center mb-5">How to get <span style="color: brown; font-weight: bold; text-decoration: underline;">Fresh Food</span></h1>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="stepbox">
+                    <h1>1</h1>
+                    <p>Select Food</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 mb-4">
+                <div class="stepbox">
+                    <h1>2</h1>
+                    <p>Food Details</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 mb-4">
+                <div class="stepbox">
+                    <h1>3</h1>
+                    <p>Next Food</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- food box -->
+
+<div class="container">
+    <h1 class="text-center mb-4 mt-5">Customers<span style="color: brown; font-weight: bold; text-decoration: underline;">Fresh Food</span></h1>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let fed of fooddata">
+             <div class="foodbox" style="text-align: center;">
+                <img src="{{fed.foodimg}}" width="100%" height="250px" style="border-radius: 20px;">
+                <h1 class="mt-4 mb-4" style="font-size: 25px;">Food Name: {{fed.foodname}}</h1>
+                <p>Price: {{fed.foodprice | currency: 'PKR'}}</p>
+             </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5 mb-4">
+        <a class="btn-class" routerLink="/menu">Click More <i style="font-size: 15px" class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+
+    
+

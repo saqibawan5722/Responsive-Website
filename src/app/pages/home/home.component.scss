@@ -1,0 +1,81 @@
+
+
+// This Is Use For Banner
+.banner{
+    background-image: url('/assets/pic.jpg');
+    height: 700px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.banner h1{
+    position: absolute;
+    top: 40%;
+    // left: 40%;
+    font-size: bold;
+    box-sizing: border-box;
+    background-color: black;
+    color: azure;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.banner a{
+    position: absolute;
+    top: 58%;
+    // left: 40%;
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.banner a:hover{
+    background-color: rgb(0, 75, 50);
+    color: azure;
+}
+
+
+//  Use for Step
+
+.step .stepbox{
+    background-color: black;  
+    border-radius: 5px; 
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.step .stepbox h1{
+    color: azure;
+    font-family: italic;
+
+}
+
+.step .stepbox p{
+    color: greenyellow;
+    font-family: italic;
+}
+
+
+// food box
+
+.foodbox{
+    padding: 10px 5px;
+}
+
+.btn-class{
+     text-align: center;
+     text-decoration: none;
+     color: aqua;
+     background-color: black;
+     border-radius: 5px;
+     padding: 10px 10px;
+}
+
+.text-center .btn-class:hover{
+     color: black;
+     background-color: aqua;
+}
